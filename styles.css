@@ -1,0 +1,77 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slot-machine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background.avif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  
+  .reel {
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+    background-image: url('the\ gamblers\ logo.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .reel img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  #spinButton {
+    display: block;
+    margin-top: 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #spinButton:hover {
+    background-color: #c62828;
+  }
+  
+
+  @keyframes burstAnimation {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  .burst {
+    animation-name: burstAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .logo img {
+    width: 100px; /* Adjust the width and height as needed */
+    height: 100px;
+  }
+      
